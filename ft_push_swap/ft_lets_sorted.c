@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 13:36:03 by lvarela           #+#    #+#             */
-/*   Updated: 2021/11/12 13:36:04 by lvarela          ###   ########.fr       */
+/*   Updated: 2021/11/15 19:59:13 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int	ft_lets_sorted(t_data *data)
 		ft_sort3_a(&data->stack_a, data->num_a, 'a');
 	else if (data->num_a == 2 && data->stack_a[0] > data->stack_a[1])
 		ft_swap(&data->stack_a, data->num_a, 'a');
-	else if (data->num_a > 3 && data->num_a < 7)
+	else if (data->num_a > 3 && data->num_a < 6)
 		ft_sort05(data);
-	else if (data->num_a > 6)
+	else if (data->num_a >= 6)
 		ft_sort100(data);
 	return (0);
 }
