@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 14:54:11 by lvarela           #+#    #+#             */
-/*   Updated: 2021/11/12 14:54:33 by lvarela          ###   ########.fr       */
+/*   Updated: 2021/11/15 11:29:51 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	ft_stack_fill(t_data *data, char **argv)
 		j = 0;
 		while (argv[i][j])
 		{
-			num = ft_atoi(&argv[i][j]);
 			if (ft_next(argv, &i, &j) == 1)
 				return (1);
+			num = ft_atoi(&argv[i][j]);
 			if (num > 2147483647 || num < -2147483648)
 				return (1);
 			data->stack_a[k++] = (int)num;
